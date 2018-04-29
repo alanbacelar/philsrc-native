@@ -2,10 +2,11 @@ import React from 'react';
 import { observer, inject } from 'mobx-react';
 import { StackNavigator } from 'react-navigation';
 
-import { View, Text } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 
 import MenuControl from '../components/MenuControl';
 import MoveControl from '../components/MoveControl';
+import ColorControl from '../components/ColorControl';
 import VolumeControl from '../components/VolumeControl';
 import ChannelControl from '../components/ChannelControl';
 import ConfigControl from '../components/ConfigControl';
@@ -59,15 +60,18 @@ class HomeScreen extends React.Component {
   
     render() {
         return (
-            <View style={Styles.container}>
-                <MenuControl />
-                <MoveControl />
-                <VolumeControl />
-                <ChannelControl />
-                <ConfigControl navigation={this.props.navigation} />
+            <ScrollView style={Styles.main}>
+                <View style={Styles.container}>
+                    <MenuControl />
+                    <MoveControl />
+                    <ColorControl />
+                    <VolumeControl />
+                    <ChannelControl />
+                    <ConfigControl navigation={this.props.navigation} />
 
-                {this.getFailMessage()}
-            </View>
+                    {this.getFailMessage()}
+                </View>
+            </ScrollView>
         );
     }
 }

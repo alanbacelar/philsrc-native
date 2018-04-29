@@ -1,7 +1,16 @@
 {
   "name": "PhilsRC",
-  "displayName": "PhilsRC",
+  "displayName": "Phils RC",
   "expo": {
-    "sdkVersion": "25.0.0"
+    "name": "Phils RC",
+    "icon": "./resources/images/logo.png",
+    "version": "1.0.0",
+    "sdkVersion": "25.0.0",
+    "ios": {
+      "bundleIdentifier": "com.alanbacelar.philsrc"
+    },
+    "android": {
+      "package": "com.alanbacelar.philsrc"
+    }
   }
 }

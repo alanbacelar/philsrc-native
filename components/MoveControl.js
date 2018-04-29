@@ -37,12 +37,6 @@ const MoveControl = () => {
           <ButtonIcon onPress={Api.sendKey.bind(this, 'CursorDown')} icon={require("../resources/images/arrow_bottom.png")} />
         </View>
       </View>
-
-      <View style={MoveControlStyle.row}>
-        <View style={MoveControlStyle.btn_view}>
-          <Button onPress={Api.sendKey.bind(this, 'Back')} title="voltar" />
-        </View>
-      </View>
     </View>
   );
 }

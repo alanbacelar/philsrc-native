@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 	container: {
 		display: 'flex',
-		paddingTop: 22
+		paddingTop: 22,
+		paddingBottom: 32
 	}
 });

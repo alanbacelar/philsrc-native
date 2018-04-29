@@ -31,6 +31,10 @@ export default class MenuControl extends Component {
           </View>
 
           <View style={MenuControlStyle.actionsView}>
+            <Button onPress={Api.sendKey.bind(this, 'NetTV')} title="smart" />
+          </View>
+
+          <View style={MenuControlStyle.actionsView}>
             <Button onPress={Api.sendKey.bind(this, 'Exit')} title="sair" />
           </View>
 

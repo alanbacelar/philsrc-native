@@ -1,11 +1,17 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+	main: {
+		flex: 1,
+		backgroundColor: '#000',
+		paddingTop: 16
+	},
+
 	container: {
 		flex: 1,
 		backgroundColor: '#000',
 		alignItems: 'center',
-		justifyContent: 'center',
+		justifyContent: 'center'
 	},
 
 	connected_fail: {
