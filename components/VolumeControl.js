@@ -8,7 +8,7 @@ import Button from './Button';
 
 import VolumeControlStyle from '../styles/volumeControl';
 
-const VolumeControl = ({tv_store}) => {
+const VolumeControl = ({ tv_store }) => {
   const volume = tv_store.volume || {};
 
   const sendKey = key => {
